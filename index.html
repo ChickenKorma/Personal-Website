@@ -72,11 +72,7 @@
     <div id="projects" class="container bg-light border py-5 my-5">
         <h1 class="text-center">Projects</h1>
         <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Take a look at the projects I have completed or are currently working on. Click each card for more information or use the buttons below filters to find projects by language. 
         </p>
 
         <div class="container button-group filter-button-group">
@@ -110,7 +106,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Blimp Vision System</h5>
                         <p class="card-text">Detection and pose estimation of a small, unmanned blimp</p>
-                        <a href="#" class="btn btn-light">More Info</a>
+                        <a href="#blimpModal" class="btn btn-light" data-bs-toggle="modal">More Info</a>
                     </div>
                     <div class="card-footer">October 2021 - Present</div>
                 </div>
@@ -122,7 +118,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">GimSat</h5>
                         <p class="card-text">ACS with an arduino and WiFi data transfer to PC GUI application</p>
-                        <a href="#" class="btn btn-light">More Info</a>
+                        <a href="#gimsatModal" class="btn btn-light" data-bs-toggle="modal">More Info</a>
                     </div>
                     <div class="card-footer">Jan - May 2021</div>
                 </div>
@@ -134,33 +130,135 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Video games</h5>
                         <p class="card-text">Small 2D and 3D video games and prototypes made in the Unity Engine</p>
-                        <a href="#" class="btn btn-light">More Info</a>
+                        <a href="#gamesModal" class="btn btn-light" data-bs-toggle="modal">More Info</a>
                     </div>
                     <div class="card-footer">Jan 2018 - Present</div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 text-center pt-5 web">
                 <div class="card bg-dark text-white">
-                    <div class="card-header">HTML | CSS | Javascript</div>
+                    <div class="card-header">HTML | CSS | Javascript | Bootstrap</div>
                     <img src="assets/images/website.jpg" class="card-img-top" alt="Picture of a website">
                     <div class="card-body text-center">
                         <h5 class="card-title">Portfolio Website</h5>
                         <p class="card-text">Bootstrap framework used to create this portfolio website</p>
-                        <a href="https://github.com/ChickenKorma/Personal-Website" target="_blank" class="btn btn-light">View Repo</a>
+                        <a href="#websiteModal" class="btn btn-light" data-bs-toggle="modal">More Info</a>
                     </div>
                     <div class="card-footer">May 2022 - Present</div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 text-center pt-5 python">
                 <div class="card bg-dark text-white">
-                    <div class="card-header">Python</div>
+                    <div class="card-header">Python | BeautifulSoup</div>
                     <img src="assets/images/f1.jpg" class="card-img-top" alt="Picture of formula 1 cars">
                     <div class="card-body text-center">
                         <h5 class="card-title">F1 Stats Scraper</h5>
                         <p class="card-text">Web scraping the <a class="text-light" href="https://www.formula1.com/" target="_blank">F1 website</a> for the drivers, teams and tracks</p>
-                        <a href="https://github.com/ChickenKorma/F1-Web-Scraper" target="_blank" class="btn btn-light">View Repo</a>
+                        <a href="#f1Modal" class="btn btn-light" data-bs-toggle="modal">More Info</a>
                     </div>
                     <div class="card-footer">April 2022 - Present</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Project Pop-ups-->
+    <div id="blimpModal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header text-center">Python | OpenCV</div>
+                        <img src="assets/images/blimp.jpg" class="card-img-top" alt="Picture of a blimp">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Blimp Vision System</h5>
+                            <p class="card-text">Detection and pose estimation of a small, unmanned blimp</p>
+                        </div>
+                        <div class="card-footer text-center">October 2021 - Present</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gimsatModal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header text-center">C++ | Java | Arduino | Processing</div>
+                        <img src="assets/images/cubesat.jpg" class="card-img-top" alt="Picture of a cubesat">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">GimSat</h5>
+                            <p class="card-text">ACS with an arduino and WiFi data transfer to PC GUI application</p>
+                        </div>
+                        <div class="card-footer text-center">Jan - May 2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gamesModal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header text-center">C# | Unity</div>
+                        <img src="assets/images/xboxController.jpg" class="card-img-top" alt="Picture of an xbox controller">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Video games</h5>
+                            <p class="card-text">Small 2D and 3D video games and prototypes made in the Unity Engine</p>
+                        </div>
+                        <div class="card-footer text-center">Jan 2018 - Present</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="websiteModal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header text-center">HTML | CSS | Javascript | Bootstrap</div>
+                        <img src="assets/images/website.jpg" class="card-img-top" alt="Picture of a website">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">Bootstrap framework used to create this portfolio website</p>
+                        </div>
+                        <div class="card-footer text-center">May 2022 - Present</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="f1Modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header text-center">Python | BeautifulSoup</div>
+                        <img src="assets/images/f1.jpg" class="card-img-top" alt="Picture of formula 1 cars">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">F1 Stats Scraper</h5>
+                            <p class="card-text">Web scraping the <a class="text-light" href="https://www.formula1.com/" target="_blank">F1 website</a> for the drivers, teams and tracks</p>
+                        </div>
+                        <div class="card-footer text-center">April 2022 - Present</div>
+                    </div>
                 </div>
             </div>
         </div>
