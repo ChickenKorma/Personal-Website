@@ -16,3 +16,5 @@ $('.button-group-wrap').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
+
+$grid.isotope({ filter: '*' });
